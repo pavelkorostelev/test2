@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Running Building..'
-                sh './dradlew build --no-daemon'
+                sh './gradle build --no-daemon'
                 archiveArtifacts artifacts: '/root/'
             }
         }
