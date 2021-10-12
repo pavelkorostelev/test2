@@ -8,7 +8,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("goapp")
+                    app = docker.build("456982258")
                     app.inside {
                         sh 'echo $(curl localhost:8081)'
                     }
