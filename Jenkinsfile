@@ -8,7 +8,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build("456982258")
+                    app = docker.build("456982258/repo")
                     app.inside {
                         sh 'echo $(curl localhost:8081)'
                     }
